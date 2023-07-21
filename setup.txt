@@ -1,0 +1,36 @@
+https://reactnative.dev/docs/environment-setup
+https://web.archive.org/web/20180210044548/http://spring.io/guides/gs/android/
+Install NodeJS
+Install JDK
+- https://learn.microsoft.com/en-us/java/openjdk/download
+- https://docs.gradle.org/current/userguide/compatibility.html
+Install Android Studio
+•	Android SDK
+•	Android SDK Platform
+•	Android Virtual Device
+
+System environment variables
+ANDROID_HOME= C:\Users\damia\AppData\Local\Android\Sdk
+ANDROID_TOOLS= C:\Users\damia\AppData\Local\Android\Sdk\tools
+ANDROID_PLATFORM_TOOLS= C:\Users\damia\AppData\Local\Android\Sdk\platform-tools
+
+JAVA_HOME=c:\Program Files\Android\Android Studio\jre
+
+Add to PATH C:\Users\damia\AppData\Local\Android\Sdk\platform-tools\
+
+Command prompt
+- npx react-native init Fusion
+
+
+npm install
+
+
+change the Gradle version of your project so it can recognize the JDK. You can do that by going to {project root folder}\android\gradle\wrapper\gradle-wrapper.properties and changing the distributionUrl value to upgrade the Gradle version.
+
+
+npm run android
+
+npx react-native run-android
+
+gradlew assembleRelease
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
